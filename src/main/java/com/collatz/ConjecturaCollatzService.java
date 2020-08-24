@@ -60,8 +60,9 @@ public class ConjecturaCollatzService {
                 if (sequencia < 1) break; //Há possibilidade de aparecer número negativo como resultado...
 
                 sequencias.add(sequencia);
-                this.concurrentHashMap.put(i, sequencias);
             }
+
+            this.concurrentHashMap.put(i, sequencias);
         }
     }
 
